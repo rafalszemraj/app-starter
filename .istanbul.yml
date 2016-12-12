@@ -1,0 +1,17 @@
+verbose: false
+instrumentation:
+  root: lib
+  include-all-sources: false
+  default-excludes: true
+  excludes: ['webpack*', 'dist/**', 'node_modules/**']
+  extensions:
+    - .js
+    - .jsx
+reporting:
+  print: summary
+  reports:
+    - lcov
+    - teamcity
+    - json-summary
+  report-config:
+    json-summary: {file:'coverage-summary-json}

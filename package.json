@@ -1,0 +1,34 @@
+{
+  "name": "react-starter-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack",
+    "test": "BABEL_ENV=test tape -r babel-core/register test/*.spec.js | tap-spec",
+    "cover": "BABEL_ENV=test istanbul cover node_modules/.bin/tape -- -r babel-core/register test/*.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-plugin-ramda": "^1.1.6",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "istanbul": "1.1.0-alpha.1",
+    "rimraf": "^2.5.4",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3",
+    "tape-watch": "^2.2.4",
+    "webpack": "^2.1.0-beta.25"
+  },
+  "dependencies": {
+    "ramda": "^0.22.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "redux": "^3.6.0",
+    "reselect": "^2.5.4"
+  }
+}

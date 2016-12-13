@@ -1,0 +1,22 @@
+{
+  "plugins": [
+    "ramda"
+  ],
+  "presets": [
+    [
+      "latest",
+      {
+        "es2015": {
+          "modules": false
+        }
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "latest"
+      ]
+    }
+  }
+}

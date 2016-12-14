@@ -10,7 +10,8 @@
           "modules": false
         }
       }
-    ]
+    ],
+    "react"
   ],
   "env": {
     "test": {

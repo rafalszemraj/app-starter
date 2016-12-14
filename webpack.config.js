@@ -43,16 +43,19 @@ module.exports = {
   devtool: isProd ? 'cheap-module-source-map' : 'cheap-eval-source-map',
   context: __dirname + '/src',
   entry: {
-    app: './app.js'
+    app: './app.jsx'
   },
   output: {
     path: __dirname + '/dist',
     filename: isProd ? "[name].bundle.min.js":"[name].bundle.js"
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: ["babel-loader"]
       }
